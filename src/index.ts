@@ -39,5 +39,61 @@ app.listen(PORT, () => {
 
 	// CÓDIGO PARA ATENDER OS REQUERIMENTOS
 	// R01, R02, R03, R04, R05
+
+	let aluno01 = 'Caique silva'
+	let nota1 = 21
+	let peso1 = 60
+	let altura1 = 1.70
+	let imcAluno1 = peso1 / (altura1 * altura1)
+	const dev1 = false
 	
+	
+	let aluno02 = 'Caio sousa'
+	let nota2 = 19
+	let peso2 = 75
+	let altura2 = 1.90
+	let imcAluno2 = peso2 / (altura2 * altura2)
+	const dev2 = false
+	
+	
+	let aluno03 = 'João silva'
+	let nota3 = 35
+	let peso3 = 80
+	let altura3 = 1.85
+	let imcAluno3 = peso3 / (altura3 * altura3)
+	const dev3 = true
+	
+	var soma = nota1 + nota2 + nota3
+	
+	console.log('A soma das idades é ', soma)
+	const alunos = [aluno01, aluno02, aluno03]
+	
+	console.log('O nome dos alunos é')
+	
+	console.table(alunos)
+	
+	
+	console.log('O imc do aluno1 é: ', imcAluno1)
+	console.log('O imc do aluno2 é: ', imcAluno2)
+	console.log('O imc do aluno3 é: ', imcAluno3)
+	
+	var media = imcAluno1 + imcAluno2 + imcAluno3
+	
+	console.log('A media do imc dos ubuntus é:', media)
+
+	console.log('O aluno que possui sobrenome Silva é: ', aluno03)
+	
+
+	if(dev1 === false) {
+		console.log('Aluno 1 não é dev')
+	}
+	if( dev2 === false) {
+		console.log('Aluno 2 não é dev')
+	}
+	if(dev3 === true) {
+		console.log('Aluno 3 é dev')
+	}else{
+		console.log('Aluno 3 não é dev')
+	}
+
 });
